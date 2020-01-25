@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="UserRestAPIsuite" parallel="tests" allow-return-values="true"> 
+
+<test thread-count="5" name="UserRestAPITest">
+<classes>
+<class name= "com.employeeapi.tests.Get_All_Employees"/>
+<class name= "com.employeeapi.tests.GET_Single_Employee_Record"/>
+<class name= "com.employeeapi.tests.Post_User_Record"/>
+<class name= "com.employeeapi.tests.Put_User_Record"/>
+<!--class name= "com.employeeapi.tests.Delete_user_Record"/-->
+
+</classes>
+</test>
+ </suite>

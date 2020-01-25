@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [UserRestAPIsuite]" guice-stage="DEVELOPMENT" allow-return-values="true">
+  <test thread-count="5" parallel="tests" name="UserRestAPITest(failed)">
+    <classes>
+      <class name="com.employeeapi.tests.Delete_user_Record">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="checkResponseBody"/>
+          <include name="deleteUserRecord"/>
+        </methods>
+      </class> <!-- com.employeeapi.tests.Delete_user_Record -->
+    </classes>
+  </test> <!-- UserRestAPITest(failed) -->
+</suite> <!-- Failed suite [UserRestAPIsuite] -->

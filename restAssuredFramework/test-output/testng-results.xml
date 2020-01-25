@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-01-24T09:35:34 IST" name="UserRestAPIsuite" finished-at="2020-01-24T09:35:53 IST" duration-ms="18336">
+    <groups>
+    </groups>
+    <test started-at="2020-01-24T09:35:34 IST" name="UserRestAPITest" finished-at="2020-01-24T09:35:53 IST" duration-ms="18336">
+      <class name="com.employeeapi.tests.Get_All_Employees">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.employeeapi.tests.Get_All_Employees@30b7c004]" started-at="2020-01-24T09:35:34 IST" name="setup" finished-at="2020-01-24T09:35:35 IST" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="getAllEmployess()[pri:0, instance:com.employeeapi.tests.Get_All_Employees@30b7c004]" started-at="2020-01-24T09:35:35 IST" name="getAllEmployess" finished-at="2020-01-24T09:35:39 IST" duration-ms="4824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllEmployess -->
+        <test-method signature="checkContentType()[pri:0, instance:com.employeeapi.tests.Get_All_Employees@30b7c004]" started-at="2020-01-24T09:35:39 IST" name="checkContentType" finished-at="2020-01-24T09:35:39 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentType -->
+        <test-method signature="checkResponseBody()[pri:0, instance:com.employeeapi.tests.Get_All_Employees@30b7c004]" started-at="2020-01-24T09:35:39 IST" name="checkResponseBody" finished-at="2020-01-24T09:35:39 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method signature="checkResponseTime()[pri:0, instance:com.employeeapi.tests.Get_All_Employees@30b7c004]" started-at="2020-01-24T09:35:39 IST" name="checkResponseTime" finished-at="2020-01-24T09:35:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseTime -->
+        <test-method signature="checkStatusCode()[pri:0, instance:com.employeeapi.tests.Get_All_Employees@30b7c004]" started-at="2020-01-24T09:35:39 IST" name="checkStatusCode" finished-at="2020-01-24T09:35:39 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method signature="checkStatusLine()[pri:0, instance:com.employeeapi.tests.Get_All_Employees@30b7c004]" started-at="2020-01-24T09:35:39 IST" name="checkStatusLine" finished-at="2020-01-24T09:35:39 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusLine -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.employeeapi.tests.Get_All_Employees@30b7c004]" started-at="2020-01-24T09:35:39 IST" name="tearDown" finished-at="2020-01-24T09:35:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.employeeapi.tests.Get_All_Employees -->
+      <class name="com.employeeapi.tests.Delete_user_Record">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.employeeapi.tests.Delete_user_Record@29176cc1]" started-at="2020-01-24T09:35:49 IST" name="setup" finished-at="2020-01-24T09:35:49 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="deleteUserRecord()[pri:0, instance:com.employeeapi.tests.Delete_user_Record@29176cc1]" started-at="2020-01-24T09:35:49 IST" name="deleteUserRecord" finished-at="2020-01-24T09:35:53 IST" duration-ms="3538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserRecord -->
+        <test-method signature="checkResponseBody()[pri:0, instance:com.employeeapi.tests.Delete_user_Record@29176cc1]" started-at="2020-01-24T09:35:53 IST" name="checkResponseBody" finished-at="2020-01-24T09:35:53 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:751)
+at org.testng.Assert.assertEquals(Assert.java:761)
+at com.employeeapi.tests.Delete_user_Record.checkResponseBody(Delete_user_Record.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.employeeapi.tests.Delete_user_Record@29176cc1]" started-at="2020-01-24T09:35:53 IST" name="tearDown" finished-at="2020-01-24T09:35:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.employeeapi.tests.Delete_user_Record -->
+      <class name="com.employeeapi.tests.GET_Single_Employee_Record">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.employeeapi.tests.GET_Single_Employee_Record@79efed2d]" started-at="2020-01-24T09:35:39 IST" name="setup" finished-at="2020-01-24T09:35:39 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="getAllEmployess()[pri:0, instance:com.employeeapi.tests.GET_Single_Employee_Record@79efed2d]" started-at="2020-01-24T09:35:39 IST" name="getAllEmployess" finished-at="2020-01-24T09:35:42 IST" duration-ms="2558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllEmployess -->
+        <test-method signature="checkResponseBody()[pri:0, instance:com.employeeapi.tests.GET_Single_Employee_Record@79efed2d]" started-at="2020-01-24T09:35:42 IST" name="checkResponseBody" finished-at="2020-01-24T09:35:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.employeeapi.tests.GET_Single_Employee_Record@79efed2d]" started-at="2020-01-24T09:35:42 IST" name="tearDown" finished-at="2020-01-24T09:35:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.employeeapi.tests.GET_Single_Employee_Record -->
+      <class name="com.employeeapi.tests.Post_User_Record">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.employeeapi.tests.Post_User_Record@2928854b]" started-at="2020-01-24T09:35:42 IST" name="setup" finished-at="2020-01-24T09:35:42 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="createUser()[pri:0, instance:com.employeeapi.tests.Post_User_Record@2928854b]" started-at="2020-01-24T09:35:42 IST" name="createUser" finished-at="2020-01-24T09:35:46 IST" duration-ms="3560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="checkResponseBody()[pri:0, instance:com.employeeapi.tests.Post_User_Record@2928854b]" started-at="2020-01-24T09:35:46 IST" name="checkResponseBody" finished-at="2020-01-24T09:35:46 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.employeeapi.tests.Post_User_Record@2928854b]" started-at="2020-01-24T09:35:46 IST" name="tearDown" finished-at="2020-01-24T09:35:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.employeeapi.tests.Post_User_Record -->
+      <class name="com.employeeapi.tests.Put_User_Record">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.employeeapi.tests.Put_User_Record@27ae2fd0]" started-at="2020-01-24T09:35:46 IST" name="setup" finished-at="2020-01-24T09:35:46 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="createUser()[pri:0, instance:com.employeeapi.tests.Put_User_Record@27ae2fd0]" started-at="2020-01-24T09:35:46 IST" name="createUser" finished-at="2020-01-24T09:35:49 IST" duration-ms="3552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="checkResponseBody()[pri:0, instance:com.employeeapi.tests.Put_User_Record@27ae2fd0]" started-at="2020-01-24T09:35:49 IST" name="checkResponseBody" finished-at="2020-01-24T09:35:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.employeeapi.tests.Put_User_Record@27ae2fd0]" started-at="2020-01-24T09:35:49 IST" name="tearDown" finished-at="2020-01-24T09:35:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.employeeapi.tests.Put_User_Record -->
+    </test> <!-- UserRestAPITest -->
+  </suite> <!-- UserRestAPIsuite -->
+</testng-results>
